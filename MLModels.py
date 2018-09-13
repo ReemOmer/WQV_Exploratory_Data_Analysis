@@ -30,7 +30,7 @@ import time
 warnings.filterwarnings('ignore')
 
 #--- Reading the dataset and converting date & time column into datetime obj ---
-df = pd.read_csv('/home/reem/Desktop/codes/WQ/wqfull.csv')
+df = pd.read_csv('wqfull.csv')
 df['datetime'] =  pd.to_datetime(df['datetime'], format='%d/%m/%Y %H:%M')
 
 #--- Define the variables to avoid redandancy ---
