@@ -32,7 +32,7 @@ from pandas.tools.plotting import lag_plot
 warnings.filterwarnings('ignore')
 
 #reading the dataset and converting date & time column into datetime obj
-df = pd.read_csv('/home/reem/Desktop/codes/WQ/wqfull1.csv')
+df = pd.read_csv('wqfull1.csv')
 df['datetime'] =  pd.to_datetime(df['datetime'], format='%Y-%m-%d %H:%M')
 colors = ['r','b','y','g','c', 'm']
 models_names = ['MLP','Linear Regression','Logistic Regression','Decision Tree Regressor','Deep Neural Networks','Autoregresstion']
